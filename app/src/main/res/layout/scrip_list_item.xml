@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/tv_scrip"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="start"
+        android:text="scrip"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:text="Close"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_chg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:text="Chg%"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:text="Vol%"
+        android:textSize="16sp" />
+</LinearLayout>

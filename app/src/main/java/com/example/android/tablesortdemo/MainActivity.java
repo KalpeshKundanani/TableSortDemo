@@ -61,10 +61,17 @@ public class MainActivity extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int number = Integer.parseInt(editText.getText().toString());
-                ArrayList<Scrip> data = generateRandomWords(number);
-                updateView(data);
-                removeArrows();
+                String text = editText.getText().toString();
+                if (text.length() > 0) {
+                    int number = Integer.parseInt(text);
+                    ArrayList<Scrip> data = generateRandomWords(number);
+                    updateView(data);
+                    removeArrows();
+                } else {
+                    Snackbar snackbar = Snackbar
+                            .make(view, "Enter list size", Snackbar.LENGTH_LONG);
+                    snackbar.show();
+                }
             }
         });
 
@@ -78,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     removeArrows();
                     sortScrip.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
                     isSortScripAsec = !isSortScripAsec;
-                }else{
+                } else {
                     showErrorMessage(view);
                 }
             }
@@ -94,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     removeArrows();
                     sortClose.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
                     isSortCloseAsec = !isSortCloseAsec;
-                }else{
+                } else {
                     showErrorMessage(view);
                 }
             }
@@ -110,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     removeArrows();
                     sortChg.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
                     isSortChgAsec = !isSortChgAsec;
-                }else{
+                } else {
                     showErrorMessage(view);
                 }
             }
@@ -126,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                     removeArrows();
                     sortVol.setCompoundDrawablesWithIntrinsicBounds(null, top, null, null);
                     isSortVolAsec = !isSortVolAsec;
-                }else{
+                } else {
                     showErrorMessage(view);
                 }
             }

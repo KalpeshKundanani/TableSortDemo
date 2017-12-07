@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TableSortDemo.iml" filepath="$PROJECT_DIR$/TableSortDemo.iml" />
+      <module fileurl="file://C:\Users\admin\AndroidStudioProjects\TableSortDemo\TableSortDemo.iml" filepath="C:\Users\admin\AndroidStudioProjects\TableSortDemo\TableSortDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\admin\AndroidStudioProjects\TableSortDemo\app\app.iml" filepath="C:\Users\admin\AndroidStudioProjects\TableSortDemo\app\app.iml" />
     </modules>
   </component>
 </project>
